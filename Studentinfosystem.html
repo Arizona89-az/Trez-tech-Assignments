@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student info system</title>
+</head>
+<body>
+
+<script>
+// 1. Ask the user for their details
+let name = prompt("Enter your name:");
+let age = parseInt(prompt("Enter your age:")); // convert to number
+let course = prompt("Enter your course:");
+
+// 2. Store data in variables (already done above)
+
+// 3. Check if student is 18 or older
+if (age >= 18) {
+    console.log(`Welcome ${name}! You are old enough to join the program.`);
+} else {
+    console.log(`Sorry ${name}, you must be 18 or older.`);
+}
+
+// 4. Function to display student’s full info
+function displayStudentInfo(name, age, course) {
+    return `Student Info: Name = ${name}, Age = ${age}, Course = ${course}`;
+}
+
+// 5. Use a loop to print the message 3 times
+for (let i = 1; i <= 3; i++) {
+    console.log(displayStudentInfo(name, age, course));
+}
+</script>
+
+</body>
+</html>
